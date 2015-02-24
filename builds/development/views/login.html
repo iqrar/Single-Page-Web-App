@@ -1,0 +1,28 @@
+<section class="login">
+  <form name="myform" class="form" method="post"
+    ng-submit="login()"
+    novalidate>
+        <p class="err" ng-show="message">{{ message.message}}</p>
+        <label for="name" class="vert"> Username </label>
+        <input type="text" name="name" placeholder="Username"
+          ng-model="username" ng-required="true">
+
+        <p class="err validationerror"
+        ng-show="myform.name.$invalid && myform.name.$touched">
+        Must be a valid email address</p>
+      
+        <label class="down vert"for="name"> Password </label>
+        <input type="password" name="password" placeholder="Password"
+          ng-model="password" ng-minlength="6" ng-required="true">
+         <p class="err"
+          ng-show="myform.password.$error.minlength">
+          Minimum 6 characters</p>
+
+        <button type="submit" class="btnS"
+        ng-disabled="myform.$invalid">Sign In</button>
+  </form>
+</section>
+<section class="reg">
+    <p> Not registered yet?</p>
+    <button class="regbtn"><a href="#/register">Registration</a></button>
+</section>

@@ -1,0 +1,48 @@
+<section class="login">
+  <form name="myform" class="form"
+    ng-submit="register()"
+    novalidate>
+        <p class="err " ng-show="message">{{ message.message }}</p>
+        <label for="name" class="vert"> Fullname </label>
+        <input type="text" name="name" placeholder="Fullname"
+          ng-model="fullname" ng-required="true">
+
+        <p class="err validationerror"
+        ng-show="myform.name.$invalid && myform.name.$touched">
+        Full name is required</p>
+
+        <label class="down vert"for="email"> Email </label>
+        <input type="email" name="email" placeholder="Email"
+        ng-model="email"  ng-required="true">
+       <p class="err"
+        ng-show="myform.email.$invalid && myform.email.$touched">
+        Must be a valid email address</p>
+      
+        <label class="down vert"for="password"> Password </label>
+        <input type="password" name="password" placeholder="Password"
+          ng-model="password" ng-minlength="6" ng-required="true">
+        <p class="err"
+          ng-show="myform.password.$error.minlength">
+          Minimum 6 characters</p>
+
+        <label class="down vert"for="password"> Repeat Password </label>
+        <input type="password" name="rpassword" placeholder="Password"
+          ng-model="repeat" ng-minlength="6" ng-required="true">
+         <p class="err"
+          ng-show="myform.rpassword.$error.minlength">
+          Minimum 6 characters</p>
+
+
+        <label class="same" for="check"> Receive Our newsletter?</label>
+        <input type="checkbox" name="check" 
+          ng-model="newsletter">
+
+        <button type="submit" class="btnS"
+        ng-disabled="myform.$invalid">Sign Up</button>
+  </form>
+</section>
+
+<section class="reg">
+    <p> Not registered yet?</p>
+    <button class="regbtn"><a href="#/login">Back to Login</a></button>
+</section>

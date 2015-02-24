@@ -1,0 +1,81 @@
+<section class="home" ng-show="user.userid">
+
+<header>
+   <div class="navbar navbar-default">
+      <ul class="nav navbar-nav navbar-left">      
+        <li ng-click="get()"><a href="#">Settings</a></li>
+        <li ><a href="#">Reports</a></li>
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+        <li ><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="crasoul">
+<div >
+  <carousel interval="myInterval">
+    <slide ng-repeat="slideCollection in groupedSlides" active="slide.active">
+      <div id="inner">
+        <img ng-src="{{slideCollection.image1.img}}" >      
+        <img ng-src="{{slideCollection.image2.img}}" >  
+        <img ng-src="{{slideCollection.image3.img}}" > 
+        <img ng-src="{{slideCollection.image4.img}}" >    
+      </div>
+    </slide>
+  </carousel>  
+</div>
+</section>
+
+<section class="tabs" >
+   <tabset>
+    <tab heading="Tab1" style="width:50%;" ng-click="getImages()" ng-clss="sel">
+    <div ng-repeat= "item in images">
+       <img ng-src="{{item.img}}"> 
+       </div>
+    </tab>
+    <tab heading="Tab2" style="width:50%;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Praesent at nulla posuere, euismod lectus ac, dignissim risus. Ut maximus, nibh ultricies pellentesque porttitor, leo orci tincidunt ipsum, ac facilisis massa ligula vel eros. Phasellus blandit metus sit amet turpis auctor, sed aliquet ipsum gravida. Praesent sit amet vestibulum nulla. Aliquam erat arcu, vestibulum vel mi ut, sollicitudin luctus velit. Curabitur porta justo et ligula tempus, quis facilisis lectus aliquet. Praesent ac sapien sit amet massa faucibus bibendum non et velit. Etiam eleifend, purus vel pretium lacinia, sem purus faucibus enim, in molestie lorem lacus in nunc. Quisque condimentum quam vel lobortis consequat. Ut ac lacus placerat, bibendum ligula a, mattis dui. Aenean elementum imperdiet porta. Donec ac tincidunt eros, ac commodo magna. Nulla nec arcu ut purus iaculis pellentesque. Mauris imperdiet placerat maximus. Nunc a neque odio.</p>
+    </tab>
+    </tabset>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,280 @@
+
+/* Basic Styles */
+
+html {
+  box-sizing: border-box;
+  line-height: 1; 
+  background-color: #0555;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body  {
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  *zoom: 1;
+  background-color:#005252;
+}
+
+ol, ul {
+  list-style: none; }
+
+p{
+  font-size:14px;
+  color:#000;
+}
+
+li{
+  font-size:18px;
+  color:#fff;
+}
+
+
+/* nav Styles */
+
+nav {
+  width: 100%;
+  background: #EFC94C;
+}
+
+.navbar {
+background-color: #fff;
+border-radius:none;
+border-radius:0;
+color:#000;
+}
+
+.navbar-right {
+margin-right:10%;
+}
+
+
+.navbar-nav.navbar-right:last-child {
+margin-right: 20px;
+
+border-left:1px solid black;
+}
+
+.navbar-left li a {
+  color:#000;
+  border-right:1px solid black;
+}
+
+
+.nav-tabs>li>a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 15px 15px 0 0;
+  background-color: #eee;
+  margin:0;
+}
+
+.nav-tabs>li>a {
+  color: #000;
+}
+
+.tabs img {
+  padding:1% 0 0 1%;
+  width:20%;
+  float:left;
+}
+
+.tabs p {
+  width:90%;
+  margin:0 auto;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  padding-top:5%;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+background-color: #fff;
+border: 1px solid #ddd;
+border-bottom-color: transparent;
+cursor: default;
+color:#000;
+}
+
+
+/* crasoul Styles */
+
+.crasoul {
+  display:block;
+  width:90%;
+  margin:0 auto;
+}
+
+.crasoul div#inner img {
+  width:150px;
+  margin:auto;
+}
+
+
+/* form Styles */
+.login {
+  width:50%;
+  margin:0 auto;
+  border:1px solid #000;
+  background-color:#FFFAF0;
+  border-radius:10px;
+}
+
+.form{
+  padding:5% 0 10% 10%;
+  margin:0 auto;
+  width:100%;
+
+}
+
+input {
+  width:90%;
+  border-radius:5px;
+  padding:2.3%;
+  font-size:14px;
+}
+
+input[type="checkbox"] {
+  margin-top: 6%;
+  width: 15%;
+  float: right;
+  padding: 5%;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+}
+
+.same {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  margin-top: 6%;
+  float:left;
+}
+
+label {
+display: inline-block;
+margin-bottom: 0; 
+font-weight: 0;
+font-size: 14px;
+font-height: 1.428;
+display:block;
+}
+
+label.down {
+  margin-top:2%;
+}
+
+.reg {
+  text-align:center;
+}
+
+.reg p {
+  color:#fff;
+}
+
+.regbtn {
+  width:40%;
+  font-weight:bold;
+  font-size:15px;
+  border-radius:5px;
+  background-color:#7ACC29;
+  color:#fff;
+  cursor:pointer;
+  padding:0.7%;
+}
+
+.err {
+  color:#fff;
+  background-color:#A30000;
+  font-size:14px;
+  width:90%;
+  padding: 1% 0 0.5% 1%;
+  border:2px solid #fff;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.btnS {
+  width:90%; 
+  margin-top:5%; 
+  font-size:10px;
+  border-radius:5px;
+  background-color:#fff;
+  font-size:15px;
+  font-weight:bold;
+  background-color:#7ACC29;
+  color:#fff;
+  cursor:pointer;
+  padding:1.5%;
+}
+
+a {
+  color:#fff;
+}
+
+a:hover, a:focus {
+color: #fff;
+text-decoration: none;
+}
+
+
+
+/*mobile styles*/
+@media only screen and (max-width:500px) {
+  
+ .crasoul div#inner img {
+  width:90%;
+  margin:auto;
+  float:none;
+}
+
+.tabs img {
+  padding-left: 12%;
+  width:90%;
+  float:none;
+  margin:0 auto;
+}
+
+
+.navbar-left a {
+  text-align:center;
+  border:1px solid #000;
+  margin-left:8%;
+  margin-bottom:2%;
+  width:80%;
+  border-right:none;
+  color:#fff;
+  background-color:#FFAD5C;
+  border-radius:10px;
+}
+
+.navbar-left li:first-child a {
+  margin-bottom:3%;
+ }
+
+.navbar-right a {
+  text-align:center;
+  border:1px solid #000;
+  margin-left:8.5%;
+  width:86%;
+  background-color:#FFAD5C;
+  border-radius:10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
