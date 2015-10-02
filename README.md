@@ -1,7 +1,8 @@
 # Testing Angularjs skills
 
 # Build
-npm install 
+npm install
+
 bower install
 
 # Single-Page-Web-App
