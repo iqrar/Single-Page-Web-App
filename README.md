@@ -5,6 +5,8 @@ npm install
 
 bower install
 
+gulp
+
 # Single-Page-Web-App
 Building Single page web app to check coding skills on 
 various technologies.
