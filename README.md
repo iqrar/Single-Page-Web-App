@@ -1,4 +1,9 @@
-Testing Angularjs skills
+# Testing Angularjs skills
+
+# Build
+npm install 
+bower install
+
 # Single-Page-Web-App
 Building Single page web app to check coding skills on 
 various technologies.
